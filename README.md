@@ -5,6 +5,8 @@ This is the official implementation of our paper **"Dense Prediction with Attent
 
 [[Paper](https://arxiv.org/abs/2111.00770)] [[Project](https://www.vis.xyz/pub/dla-afa/)]
 
+<img src="./readme/src/Overview.png" width="830">
+
 ## Abstract
 Aggregating information from features across different layers is essential for dense prediction models. Despite its limited expressiveness, vanilla feature concatenation dominates the choice of aggregation operations. In this paper, we introduce Attentive Feature Aggregation (AFA) to fuse different network layers with more expressive non-linear operations. AFA exploits both spatial and channel attention to compute weighted averages of the layer activations. Inspired by neural volume rendering, we further extend AFA with Scale-Space Rendering (SSR) to perform a late fusion of multi-scale predictions. AFA is applicable to a wide range of existing network designs. Our experiments show consistent and significant improvements on challenging semantic segmentation benchmarks, including Cityscapes and BDD100K at negligible computational and parameter overhead. In particular, AFA improves the performance of the Deep Layer Aggregation (DLA) model by nearly 6% mIoU on Cityscapes. Our experimental analyses show that AFA learns to progressively refine segmentation maps and improve boundary details, leading to new state-of-the-art results on boundary detection benchmarks on NYUDv2 and BSDS500.
 
@@ -37,6 +39,13 @@ Please see [GETTING_STARTED.md](./readme/GETTING_STARTED.md) for the basic usage
 |:-----:|:---------:|:----------:|:---------------:|:-----:|:-----:|:------:|:-------:|:-----:|:-------:|
 | AFA-DLA | 416x416 | 16 | 14 | 0.812 | 0.826 | [config](./configs/bsds/afa_dla_up_dla34.yaml) | [model](https://dl.cv.ethz.ch/afa/bsds/afa_dla_up_dla34.ckpt) | [test](https://dl.cv.ethz.ch/afa/bsds/mats.zip) | [test](https://dl.cv.ethz.ch/afa/bsds/edges.zip) |
 | AFA-DLA (PASCAL) | 416x416 | 16 | 20 | 0.810 | 0.826 | [config](./configs/bsds/afa_dla_up_dla34_pascal.yaml) | [model](https://dl.cv.ethz.ch/afa/bsds_pascal/afa_dla_up_dla34_pascal.ckpt) | [test](https://dl.cv.ethz.ch/afa/bsds_pascal/mats.zip) | [test](https://dl.cv.ethz.ch/afa/bsds_pascal/edges.zip) |
+
+## Qualitative Results
+### Cityscapes Test Set
+<img src="./readme/src/cityscapes.png" width="830">
+
+### BDD100K Test Set
+<img src="./readme/src/bdd100k.png" width="830">
 
 ## Citation
 ```
