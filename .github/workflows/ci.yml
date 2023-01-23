@@ -1,0 +1,39 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install --ignore-installed -r requirements.txt
+      - name: pylint
+        run: python3 -m pylint afa
+      - name: docstype
+        run: python3 -m pydocstyle --convention=google afa
+      - name: mypy
+        # You can comment this out if you use this repo for a student project
+        run: python3 -m mypy --strict afa
+      - name: isort
+        # these errors can be fixed by python3 -m isort afa
+        run: python3 -m isort -c afa
+      - name: black
+        # these errors can be fixed by python3 -m black --check afa
+        run: python3 -m black --check afa

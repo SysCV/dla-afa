@@ -1,0 +1,32 @@
+config:
+  exp_name: afa_dla_up_ocr_ssr_dla102x_cityscapes
+
+  dataset: cityscapes
+  cv: 0
+
+  crop_size: "1024,2048"
+  inplace_abn: false
+
+  accelerator: gpu
+  devices: 8
+  strategy: ddp
+  samples_per_gpu: 1
+  workers_per_gpu: 4
+
+  sync_batchnorm: true
+  precision: 16
+  benchmark: true
+  replace_sampler_ddp: false
+
+  poly_exp: 0.9
+  lr: 0.01
+  max_epochs: 375
+  max_cu_epochs: 350
+  warmup_iters: 1000
+
+  n_scales_training: "0.5,1.0"
+  n_scales_inference: "0.5,1.0,1.5,1.75,2.0"
+
+  arch: afa_dla_ocr_seg_ssr.dla102x
+  num_sanity_val_steps: 0
+  check_val_every_n_epoch: 25
