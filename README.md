@@ -47,6 +47,8 @@ Please see [GETTING_STARTED.md](./readme/GETTING_STARTED.md) for the basic usage
 ### BDD100K Test Set
 <img src="./readme/src/bdd100k.png" width="830">
 
+You can find more visualizations in our [project page](https://www.vis.xyz/pub/dla-afa/).
+
 ## Citation
 ```
 @inproceedings{yang2023dense,
