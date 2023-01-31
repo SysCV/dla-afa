@@ -26,6 +26,16 @@ mkdir data
 
 - The experimental results will be saved under ``${WORK_DIR}/${EXP_NAME}/${VERSION}``. You need to specify the experiment name ``${EXP_NAME}`` and we will use the timestamp as the version name ``${VERSION}`` if you do not config it for every experiment.
 
+## Inplace ABN
+- We use [Inplace ABN](https://github.com/mapillary/inplace_abn) for most of our experiments.
+
+- Please install it with the latest version.
+```bash
+git clone https://github.com/mapillary/inplace_abn.git
+cd inplace_abn
+python setup.py install
+```
+
 ## Seg Fix
 - We use the offset provided from [Seg Fix](https://github.com/openseg-group/openseg.pytorch/blob/master/MODEL_ZOO.md#use-offline-generated-offsets) to do the post-processing for our Cityscapes final results.
 
