@@ -20,25 +20,25 @@ Please see [GETTING_STARTED.md](./readme/GETTING_STARTED.md) for the basic usage
 ### Cityscapes
 | Model | Crop Size | Batch Size | Training Epochs | mIoU (val) | mIoU (test) | config | weights | Preds | Visuals |
 |:-----:|:---------:|:----------:|:---------------:|:----------:|:-----------:|:------:|:-------:|:-----:|:-------:|
-| AFA-DLA (Train) | 1024x2048 | 8 | 375 | 85.14 | - | [config](./configs/cityscapes/afa_dla_up_ocr_ssr_dla102x.yaml) | [model](https://dl.cv.ethz.ch/afa/cityscapes/afa_dla_up_ocr_ssr_dla102x.ckpt) | [val](https://dl.cv.ethz.ch/afa/cityscapes/Preds/val.zip) | [val](https://dl.cv.ethz.ch/afa/cityscapes/Visuals/val.zip) |
-| AFA-DLA (Train + Val) | 1024x1024 | 16 | 275 | - | 83.58 | [config](./configs/cityscapes/afa_dla_up_ocr_ssr_dla102x_cv_3.yaml) | [model](https://dl.cv.ethz.ch/afa/cityscapes/afa_dla_up_ocr_ssr_dla102x_cv_3.ckpt) | [test](https://dl.cv.ethz.ch/afa/cityscapes/Preds/test.zip) | [test](https://dl.cv.ethz.ch/afa/cityscapes/Visuals/test.zip) |
+| AFA-DLA (Train) | 1024x2048 | 8 | 375 | 85.14 | - | [config](./configs/cityscapes/afa_dla_up_ocr_ssr_dla102x.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//cityscapes/afa_dla_up_ocr_ssr_dla102x.ckpt) | [val](https://huggingface.co/RoyYang0714/AFA/resolve/main//cityscapes/Preds/val.zip) | [val](https://huggingface.co/RoyYang0714/AFA/resolve/main//cityscapes/Visuals/val.zip) |
+| AFA-DLA (Train + Val) | 1024x1024 | 16 | 275 | - | 83.58 | [config](./configs/cityscapes/afa_dla_up_ocr_ssr_dla102x_cv_3.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//cityscapes/afa_dla_up_ocr_ssr_dla102x_cv_3.ckpt) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//cityscapes/Preds/test.zip) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//cityscapes/Visuals/test.zip) |
 
 ### BDD100K
 | Model | Crop Size | Batch Size | Training Epochs | mIoU (val) | mIoU (test) | config | weights | Preds | Visuals |
 |:-----:|:---------:|:----------:|:---------------:|:----------:|:-----------:|:------:|:-------:|:-----:|:-------:|
-| AFA-DLA | 720x1280 | 16 | 200 | 67.46 | 58.70 | [config](./configs/bdd100k/afa_dla_up_ocr_ssr_dla169.yaml) | [model](https://dl.cv.ethz.ch/afa/bdd100k/afa_dla_up_ocr_ssr_dla169.ckpt) | [val](https://dl.cv.ethz.ch/afa/bdd100k/Preds/val.zip) \| [test](https://dl.cv.ethz.ch/afa/bdd100k/Preds/test.zip) | [val](https://dl.cv.ethz.ch/afa/bdd100k/Visuals/val.zip) \| [test](https://dl.cv.ethz.ch/afa/bdd100k/Visuals/test.zip) |
+| AFA-DLA | 720x1280 | 16 | 200 | 67.46 | 58.70 | [config](./configs/bdd100k/afa_dla_up_ocr_ssr_dla169.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//bdd100k/afa_dla_up_ocr_ssr_dla169.ckpt) | [val](https://huggingface.co/RoyYang0714/AFA/resolve/main//bdd100k/Preds/val.zip) \| [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//bdd100k/Preds/test.zip) | [val](https://huggingface.co/RoyYang0714/AFA/resolve/main//bdd100k/Visuals/val.zip) \| [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//bdd100k/Visuals/test.zip) |
 
 ### NYUDv2
 | Model | Crop Size | Batch Size | Training Epochs |  ODS  |  OIS  | config | weights | Preds | Visuals |
 |:-----:|:---------:|:----------:|:---------------:|:-----:|:-----:|:------:|:-------:|:-----:|:-------:|
-| AFA-DLA (RGB) |  480x480  | 16 | 54 | 0.762 | 0.775 | [config](./configs/nyud/afa_dla_up_dla34.yaml) | [model](https://dl.cv.ethz.ch/afa/nyud/afa_dla_up_dla34.ckpt) | [test](https://dl.cv.ethz.ch/afa/nyud/mats.zip) | [test](https://dl.cv.ethz.ch/afa/nyud/edges.zip) |
-| AFA-DLA (HHA) |  480x480  | 16 | 54 | 0.718 | 0.730 | [config](./configs/nyud/afa_dla_up_dla34_hha.yaml) | [model](https://dl.cv.ethz.ch/afa/nyud_hha/afa_dla_up_dla34_hha.ckpt) | [test](https://dl.cv.ethz.ch/afa/nyud_hha/mats.zip) | [test](https://dl.cv.ethz.ch/afa/nyud_hha/edges.zip) |
+| AFA-DLA (RGB) |  480x480  | 16 | 54 | 0.762 | 0.775 | [config](./configs/nyud/afa_dla_up_dla34.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//nyud/afa_dla_up_dla34.ckpt) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//nyud/mats.zip) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//nyud/edges.zip) |
+| AFA-DLA (HHA) |  480x480  | 16 | 54 | 0.718 | 0.730 | [config](./configs/nyud/afa_dla_up_dla34_hha.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//nyud_hha/afa_dla_up_dla34_hha.ckpt) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//nyud_hha/mats.zip) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//nyud_hha/edges.zip) |
 
 ### BSDS500
 | Model | Crop Size | Batch Size | Training Epochs |  ODS  |  OIS  | config | weights | Preds | Visuals |
 |:-----:|:---------:|:----------:|:---------------:|:-----:|:-----:|:------:|:-------:|:-----:|:-------:|
-| AFA-DLA | 416x416 | 16 | 14 | 0.812 | 0.826 | [config](./configs/bsds/afa_dla_up_dla34.yaml) | [model](https://dl.cv.ethz.ch/afa/bsds/afa_dla_up_dla34.ckpt) | [test](https://dl.cv.ethz.ch/afa/bsds/mats.zip) | [test](https://dl.cv.ethz.ch/afa/bsds/edges.zip) |
-| AFA-DLA (PASCAL) | 416x416 | 16 | 20 | 0.810 | 0.826 | [config](./configs/bsds/afa_dla_up_dla34_pascal.yaml) | [model](https://dl.cv.ethz.ch/afa/bsds_pascal/afa_dla_up_dla34_pascal.ckpt) | [test](https://dl.cv.ethz.ch/afa/bsds_pascal/mats.zip) | [test](https://dl.cv.ethz.ch/afa/bsds_pascal/edges.zip) |
+| AFA-DLA | 416x416 | 16 | 14 | 0.812 | 0.826 | [config](./configs/bsds/afa_dla_up_dla34.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//bsds/afa_dla_up_dla34.ckpt) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//bsds/mats.zip) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//bsds/edges.zip) |
+| AFA-DLA (PASCAL) | 416x416 | 16 | 20 | 0.810 | 0.826 | [config](./configs/bsds/afa_dla_up_dla34_pascal.yaml) | [model](https://huggingface.co/RoyYang0714/AFA/resolve/main//bsds_pascal/afa_dla_up_dla34_pascal.ckpt) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//bsds_pascal/mats.zip) | [test](https://huggingface.co/RoyYang0714/AFA/resolve/main//bsds_pascal/edges.zip) |
 
 ## Qualitative Results
 ### Cityscapes Test Set
